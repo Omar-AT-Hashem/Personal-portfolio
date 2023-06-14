@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import  { FC } from "react";
 import myImage from "../assets/images/me.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 

@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import { FC, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar: FC = () => {
@@ -37,7 +37,7 @@ const Navbar: FC = () => {
       <h1 className="text-white text-5xl font-signature select-none">Omar</h1>
 
       <ul className="hidden md:flex">
-        {links.map(({ id, link }) => (
+        {links.map(({ id, link }: navbarLink) => (
           <li key={id} className="navbar-link">
             {link}
           </li>
