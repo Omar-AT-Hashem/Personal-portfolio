@@ -4,18 +4,18 @@ import SocialLinks from "./components/SocialLinks";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 function App() {
-  
-
   return (
     <>
-    <Navbar />
-    <Home />
-    <About />
-    <Portfolio />
+      <Navbar />
+      <Home />
+      <About />
+      <Portfolio />
 
-    <SocialLinks />
+      <SocialLinks />
     </>
   );
 }
 
 export default App;
+
+// test commit
