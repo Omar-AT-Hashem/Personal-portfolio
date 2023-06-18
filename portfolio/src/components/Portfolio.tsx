@@ -69,12 +69,7 @@ const Portfolio = () => {
       demo: "https://weathery11.netlify.app",
       code: "https://github.com/Omar-AT-Hashem/Personal-portfolio",
     },
-    {
-      id: 4,
-      thumbnail: weatherlyImage,
-      demo: "https://weathery11.netlify.app",
-      code: "https://github.com/Omar-AT-Hashem/Personal-portfolio",
-    },
+    
   ];
 
   return (

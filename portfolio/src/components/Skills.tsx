@@ -3,7 +3,7 @@ import tsIcon from "../assets/images/tsIcon.png";
 import cssIcon from "../assets/images/cssIcon.png";
 import nodeIcon from "../assets/images/nodeIcon.png";
 import nextIcon from "../assets/images/nextjsIcon.png";
-import tailwindIcon from "../assets/images/cssIcon.png";
+import tailwindIcon from "../assets/images/tailwindcssIcon.png";
 import htmlIcon from "../assets/images/htmlIcon.png";
 import reactIcon from "../assets/images/reactIcon.png";
 
