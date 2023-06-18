@@ -10,7 +10,6 @@ function App() {
       <Home />
       <About />
       <Portfolio />
-      <Portfolio />
       <SocialLinks />
     </>
   );
