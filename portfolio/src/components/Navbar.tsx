@@ -1,7 +1,7 @@
-import { FC, useState } from "react";
+import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-const Navbar: FC = () => {
+const Navbar = () => {
   type navbarLink = {
     id: number;
     link: string;
@@ -24,7 +24,7 @@ const Navbar: FC = () => {
     },
     {
       id: 4,
-      link: "Experience",
+      link: "Skills",
     },
     {
       id: 5,
@@ -51,18 +51,22 @@ const Navbar: FC = () => {
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 
-      
-        <ul className={nav? "flex flex-col justify-center items-center absolute top-0 left-0 w-screen h-screen  bg-gradient-to-b from-black to-gray-500 duration-500" : "flex flex-col justify-center items-center absolute top-0 left-full w-screen h-screen  bg-gradient-to-b from-black to-gray-500 duration-500"}>
-          {links.map(({ id, link }) => (
-            <li
-              key={id}
-              className="px-4 py-4 cursor-pointer text-4xl hover:scale-105 duration-200"
-            >
-              {link}
-            </li>
-          ))}
-        </ul>
-      
+      <ul
+        className={
+          nav
+            ? "flex flex-col justify-center items-center absolute top-0 left-0 w-screen h-screen  bg-gradient-to-b from-black to-gray-500 duration-500"
+            : "flex flex-col justify-center items-center absolute top-0 left-full w-screen h-screen  bg-gradient-to-b from-black to-gray-500 duration-500"
+        }
+      >
+        {links.map(({ id, link }) => (
+          <li
+            key={id}
+            className="px-4 py-4 cursor-pointer text-4xl hover:scale-105 duration-200"
+          >
+            {link}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

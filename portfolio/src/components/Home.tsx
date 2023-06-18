@@ -1,11 +1,10 @@
-import  { FC } from "react";
 import myImage from "../assets/images/me.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
-const Home: FC = () => {
+const Home = () => {
   return (
     <div
-      className="h-screen w-full bg-gradient-to-b
+      className="h-auto pt-36 w-full bg-gradient-to-b
      from-black via-black to-gray-800"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col justify-center items-center h-full px-4 md:flex-row">
