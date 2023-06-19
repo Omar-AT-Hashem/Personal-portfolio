@@ -4,6 +4,7 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 const Home = () => {
   return (
     <div
+      id="Home"
       className="h-auto pt-36 w-full bg-gradient-to-b
      from-black via-black to-gray-800"
     >

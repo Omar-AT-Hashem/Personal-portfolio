@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import socialLink from "../models/socialLink";
 
-const SocialLinks = () => {
+const Footer = () => {
   const socialLinks: socialLink[] = [
     {
       id: 1,
@@ -37,19 +37,16 @@ const SocialLinks = () => {
   ];
 
   return (
-    <div className=" hidden lg:flex flex-col fixed top-[35%] left-0">
-      <ul>
+    <div className="px-4 py-2 pb-6 w-auto h-full bg-gradient-to-b from-gray-800 to-black border-t-2 ">
+      <ul className="flex flex-row  justify-between max-w-screen-md mx-auto">
         {socialLinks.map((link: socialLink) => (
-          <li
-            key={link.id}
-            className="flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500 "
-          >
+          <li key={link.id} className="text-white hover:scale-105 duration-300">
             <a
               download={link.download}
               target="_blank"
               href={link.href}
               rel="noreferrer"
-              className="flex justify-between w-full items-center text-white"
+              className=""
             >
               {link.child}
             </a>
@@ -60,4 +57,4 @@ const SocialLinks = () => {
   );
 };
 
-export default SocialLinks;
+export default Footer;

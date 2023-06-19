@@ -1,12 +1,9 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import navbarLink from "../models/navbarLink";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
-  type navbarLink = {
-    id: number;
-    link: string;
-  };
-
   const [nav, setNav] = useState<boolean>(false);
 
   const links: navbarLink[] = [
@@ -39,7 +36,9 @@ const Navbar = () => {
       <ul className="hidden md:flex">
         {links.map(({ id, link }: navbarLink) => (
           <li key={id} className="navbar-link">
-            {link}
+            <Link to={link} smooth duration={500}>
+              {link}
+            </Link>
           </li>
         ))}
       </ul>
@@ -54,16 +53,18 @@ const Navbar = () => {
       <ul
         className={
           nav
-            ? "flex flex-col justify-center items-center absolute top-0 left-0 w-screen h-screen  bg-gradient-to-b from-black to-gray-500 duration-500"
-            : "flex flex-col justify-center items-center absolute top-0 left-full w-screen h-screen  bg-gradient-to-b from-black to-gray-500 duration-500"
+            ? "flex flex-col justify-center items-center absolute top-0 left-0 w-screen h-screen  bg-gradient-to-b from-black via to-gray-600 duration-500"
+            : "flex flex-col justify-center items-center absolute top-[-20%] left-full w-0 h-0  bg-gradient-to-b from-black to-gray-600 duration-500"
         }
       >
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="px-4 py-4 cursor-pointer text-4xl hover:scale-105 duration-200"
+            className=" text-white px-4 py-4 cursor-pointer text-4xl hover:scale-105 duration-200"
           >
-            {link}
+            <Link to={link} smooth duration={500} onClick={() => setNav(!nav)}>
+              {link}
+            </Link>
           </li>
         ))}
       </ul>
