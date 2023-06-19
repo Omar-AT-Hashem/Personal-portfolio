@@ -28,7 +28,7 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div>
+        <div className="pt-20 md:pt-0">
           <img
             src={myImage}
             alt="my profile"
