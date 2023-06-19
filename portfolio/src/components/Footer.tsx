@@ -31,7 +31,7 @@ const Footer = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "./public/resume.pdf",
+      href: "./resume.pdf",
       download: true,
     },
   ];
