@@ -54,7 +54,7 @@ const Navbar = () => {
         className={
           nav
             ? "flex flex-col justify-center items-center absolute top-0 left-0 w-screen h-screen  bg-gradient-to-b from-black via to-gray-600 duration-500"
-            : "flex flex-col justify-center items-center absolute top-[-20%] left-full w-0 h-0  bg-gradient-to-b from-black to-gray-600 duration-500"
+            : "flex flex-col justify-center items-center absolute top-[-200%] left-full w-0 h-0  bg-gradient-to-b from-black to-gray-600 duration-500"
         }
       >
         {links.map(({ id, link }) => (
@@ -62,7 +62,10 @@ const Navbar = () => {
             key={id}
             className=" text-white px-4 py-4 cursor-pointer text-4xl hover:scale-105 duration-200"
           >
-            <Link to={link} smooth duration={500} onClick={() => setNav(!nav)}>
+            <Link to={link}
+             smooth 
+             duration={500} 
+             onClick={() => setNav(!nav)}>
               {link}
             </Link>
           </li>
