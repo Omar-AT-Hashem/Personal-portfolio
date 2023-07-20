@@ -1,5 +1,6 @@
 import weatherlyImage from "../assets/images/weatherlyImage.png";
 import project from "../models/project";
+import econnectImage from '../assets/images/econnect.png'
 
 const Portfolio = () => {
   const projects: project[] = [
@@ -11,22 +12,11 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      thumbnail: weatherlyImage,
-      demo: "https://weathery11.netlify.app",
-      code: "https://github.com/Omar-AT-Hashem/weatherly",
+      thumbnail: econnectImage,
+      demo: "https://e-connect-jsljkib47-omar-at-hashem.vercel.app/login",
+      code: "https://github.com/Omar-AT-Hashem/E-Connect",
     },
-    {
-      id: 3,
-      thumbnail: weatherlyImage,
-      demo: "https://weathery11.netlify.app",
-      code: "https://github.com/Omar-AT-Hashem/weatherly",
-    },
-    {
-      id: 4,
-      thumbnail: weatherlyImage,
-      demo: "https://weathery11.netlify.app",
-      code: "https://github.com/Omar-AT-Hashem/weatherly",
-    },
+    
   ];
 
   return (
