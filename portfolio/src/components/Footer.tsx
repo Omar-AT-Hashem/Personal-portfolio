@@ -24,21 +24,21 @@ const Footer = () => {
       href: "https://github.com/Omar-AT-Hashem",
     },
 
-    {
-      id: 3,
-      child: (
-        <>
-          Resume <BsFillPersonLinesFill size={30} />
-        </>
-      ),
-      href: "./resume.pdf",
-      download: true,
-    },
+    // {
+    //   id: 3,
+    //   child: (
+    //     <>
+    //       Resume <BsFillPersonLinesFill size={30} />
+    //     </>
+    //   ),
+    //   href: "./resume.pdf",
+    //   download: true,
+    // },
   ];
 
   return (
     <div className="px-4 py-2 pb-6 w-auto h-full bg-gradient-to-b from-gray-800 to-black border-t-2 ">
-      <ul className="flex flex-row  justify-between max-w-screen-md mx-auto">
+      <ul className="flex flex-row justify-center gap-32 sm:gap-80 max-w-screen-md mx-auto">
         {socialLinks.map((link: socialLink) => (
           <li key={link.id} className="text-white hover:scale-105 duration-300">
             <a

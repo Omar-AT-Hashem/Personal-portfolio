@@ -24,16 +24,16 @@ const SocialLinks = () => {
       href: "https://github.com/Omar-AT-Hashem",
     },
 
-    {
-      id: 3,
-      child: (
-        <>
-          Resume <BsFillPersonLinesFill size={30} />
-        </>
-      ),
-      href: "./resume.pdf",
-      download: true,
-    },
+    // {
+    //   id: 3,
+    //   child: (
+    //     <>
+    //       Resume <BsFillPersonLinesFill size={30} />
+    //     </>
+    //   ),
+    //   href: "./resume.pdf",
+    //   download: true,
+    // },
   ];
 
   return (
