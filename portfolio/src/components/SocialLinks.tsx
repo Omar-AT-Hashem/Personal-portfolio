@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+//import { BsFillPersonLinesFill } from "react-icons/bs";
 import socialLink from "../models/socialLink";
 
 const SocialLinks = () => {
